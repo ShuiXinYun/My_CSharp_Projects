@@ -10,7 +10,7 @@ namespace My_PSNAPI_Test
         [TestMethod]
         public static void Main()
         {
-            var account = Auth.Login("inmerufu@outlook.com", "bioplayer2010.");
+            var account = Auth.Login("inmerufu@outlook.com", "passwd");
             string account_id = account.Profile.onlineId;
             string account_lang= account.Profile.languagesUsed[0];
             int account_isplus = account.Profile.plus;
