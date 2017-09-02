@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace UI_SAMPLE1
+namespace PlayStation_Desktop
 {
     public partial class Login_Form : Form
     {
@@ -60,6 +60,12 @@ namespace UI_SAMPLE1
         {
             About_Form about_form = new About_Form();
             about_form.ShowDialog();
+        }
+
+        private void button_Login_Click(object sender, EventArgs e)
+        {
+            Fetching_Form fetching_form = new Fetching_Form();
+            fetching_form.ShowDialog();
         }
     }
 }

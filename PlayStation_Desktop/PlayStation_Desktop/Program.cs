@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_SAMPLE1
+namespace PlayStation_Desktop
 {
     static class Program
     {

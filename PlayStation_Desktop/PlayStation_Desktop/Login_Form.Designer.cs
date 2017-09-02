@@ -1,4 +1,4 @@
-﻿namespace UI_SAMPLE1
+﻿namespace PlayStation_Desktop
 {
     partial class Login_Form
     {
@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox_Login_Form_About = new System.Windows.Forms.PictureBox();
             this.pictureBox_Hide = new System.Windows.Forms.PictureBox();
             this.pictureBox_Close = new System.Windows.Forms.PictureBox();
             this.pictureBox_playstation_logo = new System.Windows.Forms.PictureBox();
@@ -49,18 +50,18 @@
             this.textBox_username = new System.Windows.Forms.TextBox();
             this.materialDivider_Login_Form_1 = new MaterialSkin.Controls.MaterialDivider();
             this.materialCheckBox_Login_Remember = new MaterialSkin.Controls.MaterialCheckBox();
-            this.pictureBox_Login_Form_About = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Login_Form_About)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playstation_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_develpoer_avatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Login_Form_About)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(250)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.pictureBox_Login_Form_About);
@@ -74,6 +75,17 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
+            // 
+            // pictureBox_Login_Form_About
+            // 
+            this.pictureBox_Login_Form_About.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Login_Form_About.Image")));
+            this.pictureBox_Login_Form_About.Location = new System.Drawing.Point(1110, 5);
+            this.pictureBox_Login_Form_About.Name = "pictureBox_Login_Form_About";
+            this.pictureBox_Login_Form_About.Size = new System.Drawing.Size(50, 35);
+            this.pictureBox_Login_Form_About.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_Login_Form_About.TabIndex = 3;
+            this.pictureBox_Login_Form_About.TabStop = false;
+            this.pictureBox_Login_Form_About.Click += new System.EventHandler(this.pictureBox_Login_Form_About_Click);
             // 
             // pictureBox_Hide
             // 
@@ -124,6 +136,7 @@
             this.button_Login.TabIndex = 1;
             this.button_Login.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Login.UseVisualStyleBackColor = true;
+            this.button_Login.Click += new System.EventHandler(this.button_Login_Click);
             // 
             // label_PlayStation_Desktop_1
             // 
@@ -292,17 +305,6 @@
             this.materialCheckBox_Login_Remember.Text = "Remember Me";
             this.materialCheckBox_Login_Remember.UseVisualStyleBackColor = false;
             // 
-            // pictureBox_Login_Form_About
-            // 
-            this.pictureBox_Login_Form_About.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Login_Form_About.Image")));
-            this.pictureBox_Login_Form_About.Location = new System.Drawing.Point(1110, 5);
-            this.pictureBox_Login_Form_About.Name = "pictureBox_Login_Form_About";
-            this.pictureBox_Login_Form_About.Size = new System.Drawing.Size(50, 35);
-            this.pictureBox_Login_Form_About.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_Login_Form_About.TabIndex = 3;
-            this.pictureBox_Login_Form_About.TabStop = false;
-            this.pictureBox_Login_Form_About.Click += new System.EventHandler(this.pictureBox_Login_Form_About_Click);
-            // 
             // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -334,11 +336,11 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Login_Form_About)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playstation_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_develpoer_avatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Login_Form_About)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,6 +369,7 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider_Login_Form_1;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox_Login_Remember;
         private System.Windows.Forms.PictureBox pictureBox_Login_Form_About;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

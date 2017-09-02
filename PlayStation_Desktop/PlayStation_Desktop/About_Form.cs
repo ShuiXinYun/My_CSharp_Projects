@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace UI_SAMPLE1
+namespace PlayStation_Desktop
 {
     public partial class About_Form : Form
     {

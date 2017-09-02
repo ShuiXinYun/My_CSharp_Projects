@@ -1,6 +1,6 @@
-﻿namespace UI_SAMPLE1
+﻿namespace PlayStation_Desktop
 {
-    partial class About_Form
+    partial class About_Form 
     {
         /// <summary>
         /// Required designer variable.
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(480, 320);
             this.Controls.Add(this.linkLabel_About_Form_Aboutme);
             this.Controls.Add(this.label1);
