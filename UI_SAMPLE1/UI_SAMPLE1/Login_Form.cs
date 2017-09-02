@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace UI_SAMPLE1
 {
-    public partial class Form1 : Form
+    public partial class Login_Form : Form
     {
-        public Form1()
+        public Login_Form()
         {
             InitializeComponent();
         }
@@ -34,12 +35,25 @@ namespace UI_SAMPLE1
 
         private void pictureBox_Hide_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void label_PlayStation_Desktop_1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        //实现无边界Form可拖拽
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+        private void Form_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
         }
     }
 }

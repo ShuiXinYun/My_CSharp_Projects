@@ -1,6 +1,6 @@
 ﻿namespace UI_SAMPLE1
 {
-    partial class Form1
+    partial class Login_Form
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox_Hide = new System.Windows.Forms.PictureBox();
             this.pictureBox_Close = new System.Windows.Forms.PictureBox();
@@ -42,10 +42,11 @@
             this.label_Welcom = new System.Windows.Forms.Label();
             this.label_username = new System.Windows.Forms.Label();
             this.label_password = new System.Windows.Forms.Label();
-            this.textBox_username = new System.Windows.Forms.TextBox();
-            this.label_crossline_1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label_crossline_2 = new System.Windows.Forms.Label();
             this.textBox_password = new System.Windows.Forms.TextBox();
+            this.label_crossline_1 = new System.Windows.Forms.Label();
+            this.textBox_username = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Close)).BeginInit();
@@ -67,6 +68,7 @@
             this.panel1.Size = new System.Drawing.Size(1280, 200);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // pictureBox_Hide
             // 
@@ -100,6 +102,7 @@
             this.pictureBox_playstation_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_playstation_logo.TabIndex = 0;
             this.pictureBox_playstation_logo.TabStop = false;
+            this.pictureBox_playstation_logo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // button_Login
             // 
@@ -110,7 +113,7 @@
             this.button_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(250)))));
             this.button_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Login.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Login.Location = new System.Drawing.Point(925, 560);
+            this.button_Login.Location = new System.Drawing.Point(875, 560);
             this.button_Login.Name = "button_Login";
             this.button_Login.Size = new System.Drawing.Size(150, 60);
             this.button_Login.TabIndex = 1;
@@ -177,58 +180,47 @@
             this.label_Welcom.Name = "label_Welcom";
             this.label_Welcom.Size = new System.Drawing.Size(400, 50);
             this.label_Welcom.TabIndex = 7;
-            this.label_Welcom.Text = "Welcom";
+            this.label_Welcom.Text = "Welcome";
             this.label_Welcom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_username
             // 
             this.label_username.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_username.Location = new System.Drawing.Point(600, 380);
+            this.label_username.Location = new System.Drawing.Point(550, 380);
             this.label_username.Name = "label_username";
             this.label_username.Size = new System.Drawing.Size(200, 40);
             this.label_username.TabIndex = 8;
-            this.label_username.Text = "USERNAME:";
+            this.label_username.Text = "USER ID:";
             this.label_username.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label_password
             // 
             this.label_password.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_password.Location = new System.Drawing.Point(600, 460);
+            this.label_password.Location = new System.Drawing.Point(550, 460);
             this.label_password.Name = "label_password";
             this.label_password.Size = new System.Drawing.Size(200, 40);
             this.label_password.TabIndex = 9;
-            this.label_password.Text = "PASSWORD:";
+            this.label_password.Text = "PASSWD:";
             this.label_password.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox_username
+            // label1
             // 
-            this.textBox_username.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_username.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_username.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox_username.Location = new System.Drawing.Point(800, 380);
-            this.textBox_username.Name = "textBox_username";
-            this.textBox_username.Size = new System.Drawing.Size(400, 41);
-            this.textBox_username.TabIndex = 10;
-            this.textBox_username.Text = "example@email.com";
-            this.textBox_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label_crossline_1
-            // 
-            this.label_crossline_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_crossline_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_crossline_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_crossline_1.Location = new System.Drawing.Point(800, 421);
-            this.label_crossline_1.Name = "label_crossline_1";
-            this.label_crossline_1.Size = new System.Drawing.Size(400, 3);
-            this.label_crossline_1.TabIndex = 11;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Emotion Engine", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label1.Location = new System.Drawing.Point(1138, 684);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 27);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Version: 0.1.0";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_crossline_2
             // 
             this.label_crossline_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_crossline_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_crossline_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_crossline_2.Location = new System.Drawing.Point(800, 500);
+            this.label_crossline_2.Location = new System.Drawing.Point(750, 500);
             this.label_crossline_2.Name = "label_crossline_2";
             this.label_crossline_2.Size = new System.Drawing.Size(400, 3);
             this.label_crossline_2.TabIndex = 12;
@@ -239,19 +231,43 @@
             this.textBox_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_password.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_password.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox_password.Location = new System.Drawing.Point(800, 459);
+            this.textBox_password.Location = new System.Drawing.Point(750, 459);
             this.textBox_password.Name = "textBox_password";
             this.textBox_password.PasswordChar = '>';
             this.textBox_password.Size = new System.Drawing.Size(400, 41);
             this.textBox_password.TabIndex = 13;
             this.textBox_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Form1
+            // label_crossline_1
+            // 
+            this.label_crossline_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_crossline_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_crossline_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_crossline_1.Location = new System.Drawing.Point(750, 421);
+            this.label_crossline_1.Name = "label_crossline_1";
+            this.label_crossline_1.Size = new System.Drawing.Size(400, 3);
+            this.label_crossline_1.TabIndex = 11;
+            // 
+            // textBox_username
+            // 
+            this.textBox_username.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_username.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_username.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox_username.Location = new System.Drawing.Point(750, 380);
+            this.textBox_username.Name = "textBox_username";
+            this.textBox_username.Size = new System.Drawing.Size(400, 41);
+            this.textBox_username.TabIndex = 10;
+            this.textBox_username.Text = "example@email.com";
+            this.textBox_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_password);
             this.Controls.Add(this.label_crossline_2);
             this.Controls.Add(this.label_crossline_1);
@@ -267,9 +283,11 @@
             this.Controls.Add(this.button_Login);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Login_Form";
             this.Text = "UI SAMPLE";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hide)).EndInit();
@@ -296,10 +314,11 @@
         private System.Windows.Forms.Label label_Welcom;
         private System.Windows.Forms.Label label_username;
         private System.Windows.Forms.Label label_password;
-        private System.Windows.Forms.TextBox textBox_username;
-        private System.Windows.Forms.Label label_crossline_1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_crossline_2;
         private System.Windows.Forms.TextBox textBox_password;
+        private System.Windows.Forms.Label label_crossline_1;
+        private System.Windows.Forms.TextBox textBox_username;
     }
 }
 
