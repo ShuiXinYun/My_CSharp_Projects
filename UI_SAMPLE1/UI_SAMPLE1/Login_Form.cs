@@ -55,5 +55,11 @@ namespace UI_SAMPLE1
             ReleaseCapture();
             SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
         }
+       
+        private void pictureBox_Login_Form_About_Click(object sender, EventArgs e)
+        {
+            About_Form about_form = new About_Form();
+            about_form.ShowDialog();
+        }
     }
 }

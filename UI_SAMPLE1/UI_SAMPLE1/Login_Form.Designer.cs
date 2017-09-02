@@ -47,11 +47,15 @@
             this.textBox_password = new System.Windows.Forms.TextBox();
             this.label_crossline_1 = new System.Windows.Forms.Label();
             this.textBox_username = new System.Windows.Forms.TextBox();
+            this.materialDivider_Login_Form_1 = new MaterialSkin.Controls.MaterialDivider();
+            this.materialCheckBox_Login_Remember = new MaterialSkin.Controls.MaterialCheckBox();
+            this.pictureBox_Login_Form_About = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playstation_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_develpoer_avatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Login_Form_About)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,6 +63,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pictureBox_Login_Form_About);
             this.panel1.Controls.Add(this.pictureBox_Hide);
             this.panel1.Controls.Add(this.pictureBox_Close);
             this.panel1.Controls.Add(this.pictureBox_playstation_logo);
@@ -113,7 +118,7 @@
             this.button_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(250)))));
             this.button_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Login.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Login.Location = new System.Drawing.Point(875, 560);
+            this.button_Login.Location = new System.Drawing.Point(825, 600);
             this.button_Login.Name = "button_Login";
             this.button_Login.Size = new System.Drawing.Size(150, 60);
             this.button_Login.TabIndex = 1;
@@ -123,7 +128,7 @@
             // label_PlayStation_Desktop_1
             // 
             this.label_PlayStation_Desktop_1.Font = new System.Drawing.Font("Emotion Engine", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_PlayStation_Desktop_1.Location = new System.Drawing.Point(0, 545);
+            this.label_PlayStation_Desktop_1.Location = new System.Drawing.Point(0, 540);
             this.label_PlayStation_Desktop_1.Margin = new System.Windows.Forms.Padding(0);
             this.label_PlayStation_Desktop_1.Name = "label_PlayStation_Desktop_1";
             this.label_PlayStation_Desktop_1.Size = new System.Drawing.Size(400, 62);
@@ -135,7 +140,7 @@
             // label_PlayStation_Desktop_2
             // 
             this.label_PlayStation_Desktop_2.Font = new System.Drawing.Font("Emotion Engine", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_PlayStation_Desktop_2.Location = new System.Drawing.Point(0, 610);
+            this.label_PlayStation_Desktop_2.Location = new System.Drawing.Point(0, 600);
             this.label_PlayStation_Desktop_2.Margin = new System.Windows.Forms.Padding(0);
             this.label_PlayStation_Desktop_2.Name = "label_PlayStation_Desktop_2";
             this.label_PlayStation_Desktop_2.Size = new System.Drawing.Size(400, 53);
@@ -145,12 +150,12 @@
             // 
             // label_Description
             // 
-            this.label_Description.Font = new System.Drawing.Font("Emotion Engine", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Description.Location = new System.Drawing.Point(0, 680);
+            this.label_Description.Font = new System.Drawing.Font("NEOTERIC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Description.Location = new System.Drawing.Point(0, 670);
             this.label_Description.Name = "label_Description";
             this.label_Description.Size = new System.Drawing.Size(400, 27);
             this.label_Description.TabIndex = 4;
-            this.label_Description.Text = "View Your PlayStation Profile Freely";
+            this.label_Description.Text = "View Your PSN Profile Freely";
             this.label_Description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox_develpoer_avatar
@@ -186,7 +191,7 @@
             // label_username
             // 
             this.label_username.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_username.Location = new System.Drawing.Point(550, 380);
+            this.label_username.Location = new System.Drawing.Point(500, 380);
             this.label_username.Name = "label_username";
             this.label_username.Size = new System.Drawing.Size(200, 40);
             this.label_username.TabIndex = 8;
@@ -196,7 +201,7 @@
             // label_password
             // 
             this.label_password.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_password.Location = new System.Drawing.Point(550, 460);
+            this.label_password.Location = new System.Drawing.Point(500, 460);
             this.label_password.Name = "label_password";
             this.label_password.Size = new System.Drawing.Size(200, 40);
             this.label_password.TabIndex = 9;
@@ -205,8 +210,7 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Emotion Engine", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Roboto Lt", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label1.Location = new System.Drawing.Point(1138, 684);
             this.label1.Name = "label1";
@@ -220,7 +224,7 @@
             this.label_crossline_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_crossline_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_crossline_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_crossline_2.Location = new System.Drawing.Point(750, 500);
+            this.label_crossline_2.Location = new System.Drawing.Point(700, 500);
             this.label_crossline_2.Name = "label_crossline_2";
             this.label_crossline_2.Size = new System.Drawing.Size(400, 3);
             this.label_crossline_2.TabIndex = 12;
@@ -231,7 +235,7 @@
             this.textBox_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_password.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_password.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox_password.Location = new System.Drawing.Point(750, 459);
+            this.textBox_password.Location = new System.Drawing.Point(700, 459);
             this.textBox_password.Name = "textBox_password";
             this.textBox_password.PasswordChar = '>';
             this.textBox_password.Size = new System.Drawing.Size(400, 41);
@@ -243,7 +247,7 @@
             this.label_crossline_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_crossline_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_crossline_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_crossline_1.Location = new System.Drawing.Point(750, 421);
+            this.label_crossline_1.Location = new System.Drawing.Point(700, 421);
             this.label_crossline_1.Name = "label_crossline_1";
             this.label_crossline_1.Size = new System.Drawing.Size(400, 3);
             this.label_crossline_1.TabIndex = 11;
@@ -252,14 +256,52 @@
             // 
             this.textBox_username.BackColor = System.Drawing.SystemColors.Control;
             this.textBox_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_username.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_username.Font = new System.Drawing.Font("Emotion Engine", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_username.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox_username.Location = new System.Drawing.Point(750, 380);
+            this.textBox_username.Location = new System.Drawing.Point(700, 380);
             this.textBox_username.Name = "textBox_username";
-            this.textBox_username.Size = new System.Drawing.Size(400, 41);
+            this.textBox_username.Size = new System.Drawing.Size(400, 37);
             this.textBox_username.TabIndex = 10;
             this.textBox_username.Text = "example@email.com";
             this.textBox_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // materialDivider_Login_Form_1
+            // 
+            this.materialDivider_Login_Form_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider_Login_Form_1.Depth = 0;
+            this.materialDivider_Login_Form_1.Location = new System.Drawing.Point(400, 200);
+            this.materialDivider_Login_Form_1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider_Login_Form_1.Name = "materialDivider_Login_Form_1";
+            this.materialDivider_Login_Form_1.Size = new System.Drawing.Size(2, 520);
+            this.materialDivider_Login_Form_1.TabIndex = 15;
+            this.materialDivider_Login_Form_1.Text = "materialDivider1";
+            // 
+            // materialCheckBox_Login_Remember
+            // 
+            this.materialCheckBox_Login_Remember.AutoSize = true;
+            this.materialCheckBox_Login_Remember.Depth = 0;
+            this.materialCheckBox_Login_Remember.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialCheckBox_Login_Remember.Location = new System.Drawing.Point(700, 520);
+            this.materialCheckBox_Login_Remember.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox_Login_Remember.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox_Login_Remember.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckBox_Login_Remember.Name = "materialCheckBox_Login_Remember";
+            this.materialCheckBox_Login_Remember.Ripple = true;
+            this.materialCheckBox_Login_Remember.Size = new System.Drawing.Size(120, 30);
+            this.materialCheckBox_Login_Remember.TabIndex = 16;
+            this.materialCheckBox_Login_Remember.Text = "Remember Me";
+            this.materialCheckBox_Login_Remember.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox_Login_Form_About
+            // 
+            this.pictureBox_Login_Form_About.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Login_Form_About.Image")));
+            this.pictureBox_Login_Form_About.Location = new System.Drawing.Point(1110, 5);
+            this.pictureBox_Login_Form_About.Name = "pictureBox_Login_Form_About";
+            this.pictureBox_Login_Form_About.Size = new System.Drawing.Size(50, 35);
+            this.pictureBox_Login_Form_About.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_Login_Form_About.TabIndex = 3;
+            this.pictureBox_Login_Form_About.TabStop = false;
+            this.pictureBox_Login_Form_About.Click += new System.EventHandler(this.pictureBox_Login_Form_About_Click);
             // 
             // Login_Form
             // 
@@ -267,6 +309,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.materialCheckBox_Login_Remember);
+            this.Controls.Add(this.materialDivider_Login_Form_1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_password);
             this.Controls.Add(this.label_crossline_2);
@@ -294,6 +338,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playstation_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_develpoer_avatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Login_Form_About)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,6 +364,9 @@
         private System.Windows.Forms.TextBox textBox_password;
         private System.Windows.Forms.Label label_crossline_1;
         private System.Windows.Forms.TextBox textBox_username;
+        private MaterialSkin.Controls.MaterialDivider materialDivider_Login_Form_1;
+        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox_Login_Remember;
+        private System.Windows.Forms.PictureBox pictureBox_Login_Form_About;
     }
 }
 

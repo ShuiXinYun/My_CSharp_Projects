@@ -118,6 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox_Login_Form_About.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAHHSURBVHhe7ZlBbsJADEWpBNtuKu7QJRL3YNkT9A49BQfoMbpl
+        wzHYIXEE1E1XbV1BpDKa4PkmcTzhI2VB4m/7v4wnEUwm/JAACZAACZAACZAACZAACZDAicDPyA/1PhMA
+        V8C4xwAeAVUQPCAdabVdWKBmHDYA9gMLhvWnVof9wAK1hWEDYD+wwOgvbJ2wjXmBJoDkRcgIXpWFBe3V
+        mEqoowDYDyzoqNG+0sB+YEFfnXeUF/YDCzpqtK80sB9YYOw8bJ2wjXmBJgC+B1z+IGJceaos7EoL25iK
+        NB8A+4EFXo151SEAboLcBC/+HTKOnioLO2phG1OR8imQJQDfUFjgdWe86hAAH4M+j0HjioZl8IqGBXBL
+        vgLYDyzw9QNXg/3AArglXwHsJxWUfm+z9SIXPpONtTRnH3EqfmvRNPFMTrwHMt74cgHwJFU2Ac3/QVA/
+        t66AhVTYBzVfBEAldA7IbS6vcu0rY34n555LE9cSlwJYt9z1rZyf12IK6VMblW9J9ibHA5K0pthrAI5i
+        ZFWTGUuvbQAOkmxpSVibJgfgQ0w81mbE2u9/AKOf9xykBsBdzHsbgFE+30tH4q7mPQdlWkqKcYEJ/AIg
+        SjeBH5uBUQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="pictureBox_Hide.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -952,7 +966,7 @@
         RudN65tdA8sHzg46DF645Xrr8m2v29fvrLwzMBQydHc4cnjkLvvu5L2key/vZ9yff7DpIfph4SOpR+WP
         lR7X/aj3Y+uI5ciZUdfRvidBTx6Mscae/5T+04fx/Kfkp+UTqhONk2aTp6fcp24+W/1s/Hnq8/npgp+l
         f65+ofviu18cf+mbWTUz/pL/cuHX4lfyr468Xva6e9Z/9vGb5Dfzc4Vv5d8efcd41/s+7P3EfOYH7IeK
-        j3ofuz55f3q4kLyw8Bv3hPP74uYdwgAAAAlwSFlzAAA1zwAANc8BnkLcygAAg2BpVFh0WE1MOmNvbS5h
+        j3ofuz55f3q4kLyw8Bv3hPP74uYdwgAAAAlwSFlzAAA1zQAANc0B4bwfQwAAg2BpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4KICAg
