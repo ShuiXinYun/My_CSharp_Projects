@@ -152,7 +152,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 25);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Auther :  云水心";
+            this.label1.Text = "Author :  云水心";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // linkLabel_About_Form_Aboutme

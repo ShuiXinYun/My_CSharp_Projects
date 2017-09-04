@@ -64,8 +64,10 @@ namespace PlayStation_Desktop
 
         private void button_Login_Click(object sender, EventArgs e)
         {
-            Fetching_Form fetching_form = new Fetching_Form();
-            fetching_form.ShowDialog();
+            //Fetching_Form fetching_form = new Fetching_Form();
+            //fetching_form.ShowDialog();
+            Main_Interface main_interface = new Main_Interface();
+            main_interface.ShowDialog();
         }
     }
 }

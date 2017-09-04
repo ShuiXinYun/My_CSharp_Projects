@@ -41,6 +41,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.2.16.3.0\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
     <Reference Include="Flurl">
       <HintPath>..\packages\Flurl.dll</HintPath>
     </Reference>
@@ -64,7 +67,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBase.cs" />
     <Compile Include="File_Downloader.cs" />
+    <Compile Include="PSN.ProfileFetch.cs" />
     <Compile Include="psn_api_test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

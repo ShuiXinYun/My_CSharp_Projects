@@ -140,6 +140,7 @@
             // 
             // label_PlayStation_Desktop_1
             // 
+            this.label_PlayStation_Desktop_1.BackColor = System.Drawing.Color.Transparent;
             this.label_PlayStation_Desktop_1.Font = new System.Drawing.Font("Emotion Engine", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_PlayStation_Desktop_1.Location = new System.Drawing.Point(0, 540);
             this.label_PlayStation_Desktop_1.Margin = new System.Windows.Forms.Padding(0);
@@ -152,6 +153,7 @@
             // 
             // label_PlayStation_Desktop_2
             // 
+            this.label_PlayStation_Desktop_2.BackColor = System.Drawing.Color.Transparent;
             this.label_PlayStation_Desktop_2.Font = new System.Drawing.Font("Emotion Engine", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_PlayStation_Desktop_2.Location = new System.Drawing.Point(0, 600);
             this.label_PlayStation_Desktop_2.Margin = new System.Windows.Forms.Padding(0);
@@ -163,6 +165,7 @@
             // 
             // label_Description
             // 
+            this.label_Description.BackColor = System.Drawing.Color.Transparent;
             this.label_Description.Font = new System.Drawing.Font("NEOTERIC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Description.Location = new System.Drawing.Point(0, 670);
             this.label_Description.Name = "label_Description";
@@ -173,6 +176,7 @@
             // 
             // pictureBox_develpoer_avatar
             // 
+            this.pictureBox_develpoer_avatar.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_develpoer_avatar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_develpoer_avatar.Image")));
             this.pictureBox_develpoer_avatar.Location = new System.Drawing.Point(0, 330);
             this.pictureBox_develpoer_avatar.Name = "pictureBox_develpoer_avatar";
@@ -183,6 +187,7 @@
             // 
             // label_UserID
             // 
+            this.label_UserID.BackColor = System.Drawing.Color.Transparent;
             this.label_UserID.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_UserID.Location = new System.Drawing.Point(0, 280);
             this.label_UserID.Name = "label_UserID";
@@ -193,6 +198,7 @@
             // 
             // label_Welcom
             // 
+            this.label_Welcom.BackColor = System.Drawing.Color.Transparent;
             this.label_Welcom.Font = new System.Drawing.Font("Emotion Engine", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Welcom.Location = new System.Drawing.Point(0, 220);
             this.label_Welcom.Name = "label_Welcom";
@@ -203,6 +209,7 @@
             // 
             // label_username
             // 
+            this.label_username.BackColor = System.Drawing.Color.Transparent;
             this.label_username.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_username.Location = new System.Drawing.Point(500, 380);
             this.label_username.Name = "label_username";
@@ -213,6 +220,7 @@
             // 
             // label_password
             // 
+            this.label_password.BackColor = System.Drawing.Color.Transparent;
             this.label_password.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_password.Location = new System.Drawing.Point(500, 460);
             this.label_password.Name = "label_password";
@@ -223,6 +231,7 @@
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Roboto Lt", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label1.Location = new System.Drawing.Point(1138, 684);
@@ -292,6 +301,7 @@
             // materialCheckBox_Login_Remember
             // 
             this.materialCheckBox_Login_Remember.AutoSize = true;
+            this.materialCheckBox_Login_Remember.BackColor = System.Drawing.Color.Transparent;
             this.materialCheckBox_Login_Remember.Depth = 0;
             this.materialCheckBox_Login_Remember.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox_Login_Remember.Location = new System.Drawing.Point(700, 520);
@@ -309,7 +319,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.materialCheckBox_Login_Remember);
             this.Controls.Add(this.materialDivider_Login_Form_1);
@@ -328,6 +338,7 @@
             this.Controls.Add(this.label_PlayStation_Desktop_1);
             this.Controls.Add(this.button_Login);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login_Form";

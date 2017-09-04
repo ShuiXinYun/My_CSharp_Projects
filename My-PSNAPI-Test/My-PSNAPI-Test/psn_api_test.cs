@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using PSN;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -10,7 +11,19 @@ namespace My_PSNAPI_Test
         [TestMethod]
         public static void Main()
         {
-            var account = Auth.Login("inmerufu@outlook.com", "passwd");
+            var account = Auth.Login("inmerufu4psn@gmail.com", "passwd");
+            profile_fetch fetch = new profile_fetch(account);
+            fetch.friends_data_fetch();
+            //Console.WriteLine(fetch.friend_ids);
+            Console.ReadLine();
+            //List<User> account_friends = account.GetFriends("all");
+            // Console.WriteLine(account_friends[0].Profile.onlineId);
+            //Console.WriteLine(account_friends[0].Profile.trophySummary.progress);
+            //Console.WriteLine(account_friends[0].CompareTrophies());
+            //Console.WriteLine(account.Profile.aboutMe);
+            //Console.WriteLine(account_friends[0].Profile.avatarUrls[0].avatarUrl);
+            //Console.ReadLine();
+            /*
             string account_id = account.Profile.onlineId;
             string account_lang= account.Profile.languagesUsed[0];
             int account_isplus = account.Profile.plus;
@@ -41,7 +54,8 @@ namespace My_PSNAPI_Test
            // file_downloader avatar_file = new file_downloader("Avatar.png", account_avatar_url);
             Console.WriteLine();
             Console.ReadLine();
-            
+            */
+
         }
     }
     

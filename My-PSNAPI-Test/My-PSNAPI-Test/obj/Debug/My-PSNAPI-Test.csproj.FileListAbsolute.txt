@@ -18,3 +18,5 @@ F:\CSharp\My-PSNAPI-Test\My-PSNAPI-Test\bin\Debug\Microsoft.VisualStudio.TestPla
 F:\CSharp\My-PSNAPI-Test\My-PSNAPI-Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 F:\CSharp\My-PSNAPI-Test\My-PSNAPI-Test\obj\Debug\My-PSNAPI-Test.exe
 F:\CSharp\My-PSNAPI-Test\My-PSNAPI-Test\obj\Debug\My-PSNAPI-Test.pdb
+F:\CSharp\My-PSNAPI-Test\My-PSNAPI-Test\bin\Debug\CsvHelper.dll
+F:\CSharp\My-PSNAPI-Test\My-PSNAPI-Test\bin\Debug\CsvHelper.xml

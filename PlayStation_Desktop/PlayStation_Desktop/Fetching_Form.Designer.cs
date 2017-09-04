@@ -44,9 +44,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(165, 80);
+            this.pictureBox1.Location = new System.Drawing.Point(208, 100);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -70,7 +70,7 @@
             // 
             // button_Fetch_Form_Cancel
             // 
-            this.button_Fetch_Form_Cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(250)))));
+            this.button_Fetch_Form_Cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.button_Fetch_Form_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Fetch_Form_Cancel.Font = new System.Drawing.Font("NEOTERIC", 18F, System.Drawing.FontStyle.Bold);
             this.button_Fetch_Form_Cancel.Location = new System.Drawing.Point(190, 251);
