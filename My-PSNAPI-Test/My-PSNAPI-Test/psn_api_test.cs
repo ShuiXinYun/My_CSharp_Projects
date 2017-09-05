@@ -11,10 +11,9 @@ namespace My_PSNAPI_Test
         [TestMethod]
         public static void Main()
         {
-            var account = Auth.Login("inmerufu4psn@gmail.com", "passwd");
+            var account = Auth.Login("inmerufu4psn@gmail.com", "bioplayer2010");
             profile_fetch fetch = new profile_fetch(account);
-            fetch.friends_data_fetch();
-            //Console.WriteLine(fetch.friend_ids);
+            fetch.friends_data_fetch(true);
             Console.ReadLine();
             //List<User> account_friends = account.GetFriends("all");
             // Console.WriteLine(account_friends[0].Profile.onlineId);

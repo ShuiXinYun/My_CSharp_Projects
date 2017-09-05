@@ -36,6 +36,19 @@
             this.button_Main_Interface_Trophy = new System.Windows.Forms.Button();
             this.button_Main_Interface_Profile = new System.Windows.Forms.Button();
             this.panel_Main_Interface_Info = new System.Windows.Forms.Panel();
+            this.pictureBox_Main_Interface_bkimage = new System.Windows.Forms.PictureBox();
+            this.label_Main_Interface_Profile_BronzeNum = new System.Windows.Forms.Label();
+            this.label_Main_Interface_Profile_Bronze = new System.Windows.Forms.Label();
+            this.label_Main_Interface_Profile_SilverNum = new System.Windows.Forms.Label();
+            this.label_Main_Interface_Profile_Silver = new System.Windows.Forms.Label();
+            this.label_Main_Interface_Profile_GoldNum = new System.Windows.Forms.Label();
+            this.label_Main_Interface_Profile_Gold = new System.Windows.Forms.Label();
+            this.label_Main_Interface_Profile_PlatiumNum = new System.Windows.Forms.Label();
+            this.label_Main_Interface_Profile_Platium = new System.Windows.Forms.Label();
+            this.pictureBox_Main_Interface_Bronze = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Main_Interface_Silver = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Main_Interface_Gold = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Main_Interface_Platium = new System.Windows.Forms.PictureBox();
             this.label_Main_Interface_Profile_aboutme_content = new System.Windows.Forms.Label();
             this.pictureBox_Main_Interface_Plus = new System.Windows.Forms.PictureBox();
             this.label_Main_Interface_Profile_aboutme = new System.Windows.Forms.Label();
@@ -49,29 +62,19 @@
             this.label_Main_Interface_Profile_level = new System.Windows.Forms.Label();
             this.pictureBox_Main_Interface_Star = new System.Windows.Forms.PictureBox();
             this.pictureBox_Main_Interface_Trophies = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Main_Interface_Platium = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Main_Interface_Gold = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Main_Interface_Silver = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Main_Interface_Bronze = new System.Windows.Forms.PictureBox();
-            this.label_Main_Interface_Profile_Platium = new System.Windows.Forms.Label();
-            this.label_Main_Interface_Profile_PlatiumNum = new System.Windows.Forms.Label();
-            this.label_Main_Interface_Profile_GoldNum = new System.Windows.Forms.Label();
-            this.label_Main_Interface_Profile_Gold = new System.Windows.Forms.Label();
-            this.label_Main_Interface_Profile_SilverNum = new System.Windows.Forms.Label();
-            this.label_Main_Interface_Profile_Silver = new System.Windows.Forms.Label();
-            this.label_Main_Interface_Profile_BronzeNum = new System.Windows.Forms.Label();
-            this.label_Main_Interface_Profile_Bronze = new System.Windows.Forms.Label();
             this.panel_Main_Interface_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Close)).BeginInit();
             this.panel_Main_Interface_Info.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_bkimage)).BeginInit();
+            this.pictureBox_Main_Interface_bkimage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Bronze)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Silver)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Gold)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Platium)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Plus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pictureBox_Main_Interface_Avatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Star)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Trophies)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Platium)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Gold)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Silver)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Bronze)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Main_Interface_Menu
@@ -183,38 +186,188 @@
             // 
             // panel_Main_Interface_Info
             // 
-            this.panel_Main_Interface_Info.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_Main_Interface_Info.BackgroundImage")));
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_BronzeNum);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_Bronze);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_SilverNum);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_Silver);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_GoldNum);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_Gold);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_PlatiumNum);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_Platium);
-            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_Main_Interface_Bronze);
-            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_Main_Interface_Silver);
-            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_Main_Interface_Gold);
-            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_Main_Interface_Platium);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_aboutme_content);
-            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_Main_Interface_Plus);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_aboutme);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_userid);
-            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_pictureBox_Main_Interface_Avatar);
-            this.panel_Main_Interface_Info.Controls.Add(this.labellabel_Main_Interface_tonextlevel_num);
-            this.panel_Main_Interface_Info.Controls.Add(this.materialDivider2);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_tonextlevel);
-            this.panel_Main_Interface_Info.Controls.Add(this.materialDivider1);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_levelnum);
-            this.panel_Main_Interface_Info.Controls.Add(this.label_Main_Interface_Profile_level);
-            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_Main_Interface_Star);
-            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_Main_Interface_Trophies);
-            this.panel_Main_Interface_Info.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_Main_Interface_bkimage);
             this.panel_Main_Interface_Info.Location = new System.Drawing.Point(0, 150);
             this.panel_Main_Interface_Info.Name = "panel_Main_Interface_Info";
             this.panel_Main_Interface_Info.Size = new System.Drawing.Size(1280, 570);
             this.panel_Main_Interface_Info.TabIndex = 1;
             this.panel_Main_Interface_Info.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
+            // 
+            // pictureBox_Main_Interface_bkimage
+            // 
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_BronzeNum);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_Bronze);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_SilverNum);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_Silver);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_GoldNum);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_Gold);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_PlatiumNum);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_Platium);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.pictureBox_Main_Interface_Bronze);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.pictureBox_Main_Interface_Silver);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.pictureBox_Main_Interface_Gold);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.pictureBox_Main_Interface_Platium);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_aboutme_content);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.pictureBox_Main_Interface_Plus);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_aboutme);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_userid);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.pictureBox_pictureBox_Main_Interface_Avatar);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.labellabel_Main_Interface_tonextlevel_num);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.materialDivider2);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_tonextlevel);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.materialDivider1);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_levelnum);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.label_Main_Interface_Profile_level);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.pictureBox_Main_Interface_Star);
+            this.pictureBox_Main_Interface_bkimage.Controls.Add(this.pictureBox_Main_Interface_Trophies);
+            this.pictureBox_Main_Interface_bkimage.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_bkimage.Image")));
+            this.pictureBox_Main_Interface_bkimage.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Main_Interface_bkimage.Name = "pictureBox_Main_Interface_bkimage";
+            this.pictureBox_Main_Interface_bkimage.Size = new System.Drawing.Size(1280, 570);
+            this.pictureBox_Main_Interface_bkimage.TabIndex = 25;
+            this.pictureBox_Main_Interface_bkimage.TabStop = false;
+            this.pictureBox_Main_Interface_bkimage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
+            // 
+            // label_Main_Interface_Profile_BronzeNum
+            // 
+            this.label_Main_Interface_Profile_BronzeNum.BackColor = System.Drawing.Color.Transparent;
+            this.label_Main_Interface_Profile_BronzeNum.Font = new System.Drawing.Font("Emotion Engine", 28F);
+            this.label_Main_Interface_Profile_BronzeNum.ForeColor = System.Drawing.SystemColors.Info;
+            this.label_Main_Interface_Profile_BronzeNum.Location = new System.Drawing.Point(1076, 477);
+            this.label_Main_Interface_Profile_BronzeNum.Name = "label_Main_Interface_Profile_BronzeNum";
+            this.label_Main_Interface_Profile_BronzeNum.Size = new System.Drawing.Size(180, 50);
+            this.label_Main_Interface_Profile_BronzeNum.TabIndex = 24;
+            this.label_Main_Interface_Profile_BronzeNum.Text = "1567";
+            this.label_Main_Interface_Profile_BronzeNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_Main_Interface_Profile_Bronze
+            // 
+            this.label_Main_Interface_Profile_Bronze.BackColor = System.Drawing.Color.Transparent;
+            this.label_Main_Interface_Profile_Bronze.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
+            this.label_Main_Interface_Profile_Bronze.ForeColor = System.Drawing.SystemColors.Info;
+            this.label_Main_Interface_Profile_Bronze.Location = new System.Drawing.Point(1076, 447);
+            this.label_Main_Interface_Profile_Bronze.Name = "label_Main_Interface_Profile_Bronze";
+            this.label_Main_Interface_Profile_Bronze.Size = new System.Drawing.Size(180, 30);
+            this.label_Main_Interface_Profile_Bronze.TabIndex = 23;
+            this.label_Main_Interface_Profile_Bronze.Text = "Bronze";
+            this.label_Main_Interface_Profile_Bronze.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_Main_Interface_Profile_SilverNum
+            // 
+            this.label_Main_Interface_Profile_SilverNum.BackColor = System.Drawing.Color.Transparent;
+            this.label_Main_Interface_Profile_SilverNum.Font = new System.Drawing.Font("Emotion Engine", 28F);
+            this.label_Main_Interface_Profile_SilverNum.ForeColor = System.Drawing.SystemColors.Info;
+            this.label_Main_Interface_Profile_SilverNum.Location = new System.Drawing.Point(820, 477);
+            this.label_Main_Interface_Profile_SilverNum.Name = "label_Main_Interface_Profile_SilverNum";
+            this.label_Main_Interface_Profile_SilverNum.Size = new System.Drawing.Size(180, 50);
+            this.label_Main_Interface_Profile_SilverNum.TabIndex = 22;
+            this.label_Main_Interface_Profile_SilverNum.Text = "83";
+            this.label_Main_Interface_Profile_SilverNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_Main_Interface_Profile_Silver
+            // 
+            this.label_Main_Interface_Profile_Silver.BackColor = System.Drawing.Color.Transparent;
+            this.label_Main_Interface_Profile_Silver.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
+            this.label_Main_Interface_Profile_Silver.ForeColor = System.Drawing.SystemColors.Info;
+            this.label_Main_Interface_Profile_Silver.Location = new System.Drawing.Point(820, 447);
+            this.label_Main_Interface_Profile_Silver.Name = "label_Main_Interface_Profile_Silver";
+            this.label_Main_Interface_Profile_Silver.Size = new System.Drawing.Size(180, 30);
+            this.label_Main_Interface_Profile_Silver.TabIndex = 21;
+            this.label_Main_Interface_Profile_Silver.Text = "Silver";
+            this.label_Main_Interface_Profile_Silver.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_Main_Interface_Profile_GoldNum
+            // 
+            this.label_Main_Interface_Profile_GoldNum.BackColor = System.Drawing.Color.Transparent;
+            this.label_Main_Interface_Profile_GoldNum.Font = new System.Drawing.Font("Emotion Engine", 28F);
+            this.label_Main_Interface_Profile_GoldNum.ForeColor = System.Drawing.SystemColors.Info;
+            this.label_Main_Interface_Profile_GoldNum.Location = new System.Drawing.Point(1076, 388);
+            this.label_Main_Interface_Profile_GoldNum.Name = "label_Main_Interface_Profile_GoldNum";
+            this.label_Main_Interface_Profile_GoldNum.Size = new System.Drawing.Size(180, 50);
+            this.label_Main_Interface_Profile_GoldNum.TabIndex = 20;
+            this.label_Main_Interface_Profile_GoldNum.Text = "303";
+            this.label_Main_Interface_Profile_GoldNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_Main_Interface_Profile_Gold
+            // 
+            this.label_Main_Interface_Profile_Gold.BackColor = System.Drawing.Color.Transparent;
+            this.label_Main_Interface_Profile_Gold.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
+            this.label_Main_Interface_Profile_Gold.ForeColor = System.Drawing.SystemColors.Info;
+            this.label_Main_Interface_Profile_Gold.Location = new System.Drawing.Point(1076, 358);
+            this.label_Main_Interface_Profile_Gold.Name = "label_Main_Interface_Profile_Gold";
+            this.label_Main_Interface_Profile_Gold.Size = new System.Drawing.Size(180, 30);
+            this.label_Main_Interface_Profile_Gold.TabIndex = 19;
+            this.label_Main_Interface_Profile_Gold.Text = "Gold";
+            this.label_Main_Interface_Profile_Gold.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_Main_Interface_Profile_PlatiumNum
+            // 
+            this.label_Main_Interface_Profile_PlatiumNum.BackColor = System.Drawing.Color.Transparent;
+            this.label_Main_Interface_Profile_PlatiumNum.Font = new System.Drawing.Font("Emotion Engine", 28F);
+            this.label_Main_Interface_Profile_PlatiumNum.ForeColor = System.Drawing.SystemColors.Info;
+            this.label_Main_Interface_Profile_PlatiumNum.Location = new System.Drawing.Point(820, 388);
+            this.label_Main_Interface_Profile_PlatiumNum.Name = "label_Main_Interface_Profile_PlatiumNum";
+            this.label_Main_Interface_Profile_PlatiumNum.Size = new System.Drawing.Size(180, 50);
+            this.label_Main_Interface_Profile_PlatiumNum.TabIndex = 18;
+            this.label_Main_Interface_Profile_PlatiumNum.Text = "11";
+            this.label_Main_Interface_Profile_PlatiumNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_Main_Interface_Profile_Platium
+            // 
+            this.label_Main_Interface_Profile_Platium.BackColor = System.Drawing.Color.Transparent;
+            this.label_Main_Interface_Profile_Platium.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
+            this.label_Main_Interface_Profile_Platium.ForeColor = System.Drawing.SystemColors.Info;
+            this.label_Main_Interface_Profile_Platium.Location = new System.Drawing.Point(820, 358);
+            this.label_Main_Interface_Profile_Platium.Name = "label_Main_Interface_Profile_Platium";
+            this.label_Main_Interface_Profile_Platium.Size = new System.Drawing.Size(180, 30);
+            this.label_Main_Interface_Profile_Platium.TabIndex = 17;
+            this.label_Main_Interface_Profile_Platium.Text = "Platium";
+            this.label_Main_Interface_Profile_Platium.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Main_Interface_Profile_Platium.Click += new System.EventHandler(this.label_Main_Interface_Profile_Platium_Click);
+            // 
+            // pictureBox_Main_Interface_Bronze
+            // 
+            this.pictureBox_Main_Interface_Bronze.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Main_Interface_Bronze.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Bronze.Image")));
+            this.pictureBox_Main_Interface_Bronze.Location = new System.Drawing.Point(1000, 447);
+            this.pictureBox_Main_Interface_Bronze.Name = "pictureBox_Main_Interface_Bronze";
+            this.pictureBox_Main_Interface_Bronze.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_Main_Interface_Bronze.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_Main_Interface_Bronze.TabIndex = 16;
+            this.pictureBox_Main_Interface_Bronze.TabStop = false;
+            // 
+            // pictureBox_Main_Interface_Silver
+            // 
+            this.pictureBox_Main_Interface_Silver.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Main_Interface_Silver.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Silver.Image")));
+            this.pictureBox_Main_Interface_Silver.Location = new System.Drawing.Point(740, 447);
+            this.pictureBox_Main_Interface_Silver.Name = "pictureBox_Main_Interface_Silver";
+            this.pictureBox_Main_Interface_Silver.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_Main_Interface_Silver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_Main_Interface_Silver.TabIndex = 15;
+            this.pictureBox_Main_Interface_Silver.TabStop = false;
+            // 
+            // pictureBox_Main_Interface_Gold
+            // 
+            this.pictureBox_Main_Interface_Gold.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Main_Interface_Gold.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Gold.Image")));
+            this.pictureBox_Main_Interface_Gold.Location = new System.Drawing.Point(1000, 358);
+            this.pictureBox_Main_Interface_Gold.Name = "pictureBox_Main_Interface_Gold";
+            this.pictureBox_Main_Interface_Gold.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_Main_Interface_Gold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_Main_Interface_Gold.TabIndex = 14;
+            this.pictureBox_Main_Interface_Gold.TabStop = false;
+            // 
+            // pictureBox_Main_Interface_Platium
+            // 
+            this.pictureBox_Main_Interface_Platium.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Main_Interface_Platium.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Platium.Image")));
+            this.pictureBox_Main_Interface_Platium.Location = new System.Drawing.Point(740, 358);
+            this.pictureBox_Main_Interface_Platium.Name = "pictureBox_Main_Interface_Platium";
+            this.pictureBox_Main_Interface_Platium.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_Main_Interface_Platium.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_Main_Interface_Platium.TabIndex = 13;
+            this.pictureBox_Main_Interface_Platium.TabStop = false;
             // 
             // label_Main_Interface_Profile_aboutme_content
             // 
@@ -377,147 +530,6 @@
             this.pictureBox_Main_Interface_Trophies.TabStop = false;
             this.pictureBox_Main_Interface_Trophies.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
-            // pictureBox_Main_Interface_Platium
-            // 
-            this.pictureBox_Main_Interface_Platium.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Main_Interface_Platium.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Platium.Image")));
-            this.pictureBox_Main_Interface_Platium.Location = new System.Drawing.Point(740, 358);
-            this.pictureBox_Main_Interface_Platium.Name = "pictureBox_Main_Interface_Platium";
-            this.pictureBox_Main_Interface_Platium.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_Main_Interface_Platium.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_Main_Interface_Platium.TabIndex = 13;
-            this.pictureBox_Main_Interface_Platium.TabStop = false;
-            // 
-            // pictureBox_Main_Interface_Gold
-            // 
-            this.pictureBox_Main_Interface_Gold.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Main_Interface_Gold.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Gold.Image")));
-            this.pictureBox_Main_Interface_Gold.Location = new System.Drawing.Point(1000, 358);
-            this.pictureBox_Main_Interface_Gold.Name = "pictureBox_Main_Interface_Gold";
-            this.pictureBox_Main_Interface_Gold.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_Main_Interface_Gold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_Main_Interface_Gold.TabIndex = 14;
-            this.pictureBox_Main_Interface_Gold.TabStop = false;
-            // 
-            // pictureBox_Main_Interface_Silver
-            // 
-            this.pictureBox_Main_Interface_Silver.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Main_Interface_Silver.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Silver.Image")));
-            this.pictureBox_Main_Interface_Silver.Location = new System.Drawing.Point(740, 447);
-            this.pictureBox_Main_Interface_Silver.Name = "pictureBox_Main_Interface_Silver";
-            this.pictureBox_Main_Interface_Silver.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_Main_Interface_Silver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_Main_Interface_Silver.TabIndex = 15;
-            this.pictureBox_Main_Interface_Silver.TabStop = false;
-            // 
-            // pictureBox_Main_Interface_Bronze
-            // 
-            this.pictureBox_Main_Interface_Bronze.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Main_Interface_Bronze.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Bronze.Image")));
-            this.pictureBox_Main_Interface_Bronze.Location = new System.Drawing.Point(1000, 447);
-            this.pictureBox_Main_Interface_Bronze.Name = "pictureBox_Main_Interface_Bronze";
-            this.pictureBox_Main_Interface_Bronze.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox_Main_Interface_Bronze.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_Main_Interface_Bronze.TabIndex = 16;
-            this.pictureBox_Main_Interface_Bronze.TabStop = false;
-            // 
-            // label_Main_Interface_Profile_Platium
-            // 
-            this.label_Main_Interface_Profile_Platium.BackColor = System.Drawing.Color.Transparent;
-            this.label_Main_Interface_Profile_Platium.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
-            this.label_Main_Interface_Profile_Platium.ForeColor = System.Drawing.SystemColors.Info;
-            this.label_Main_Interface_Profile_Platium.Location = new System.Drawing.Point(820, 358);
-            this.label_Main_Interface_Profile_Platium.Name = "label_Main_Interface_Profile_Platium";
-            this.label_Main_Interface_Profile_Platium.Size = new System.Drawing.Size(180, 30);
-            this.label_Main_Interface_Profile_Platium.TabIndex = 17;
-            this.label_Main_Interface_Profile_Platium.Text = "Platium";
-            this.label_Main_Interface_Profile_Platium.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Main_Interface_Profile_Platium.Click += new System.EventHandler(this.label_Main_Interface_Profile_Platium_Click);
-            // 
-            // label_Main_Interface_Profile_PlatiumNum
-            // 
-            this.label_Main_Interface_Profile_PlatiumNum.BackColor = System.Drawing.Color.Transparent;
-            this.label_Main_Interface_Profile_PlatiumNum.Font = new System.Drawing.Font("Emotion Engine", 24F, System.Drawing.FontStyle.Bold);
-            this.label_Main_Interface_Profile_PlatiumNum.ForeColor = System.Drawing.SystemColors.Info;
-            this.label_Main_Interface_Profile_PlatiumNum.Location = new System.Drawing.Point(820, 388);
-            this.label_Main_Interface_Profile_PlatiumNum.Name = "label_Main_Interface_Profile_PlatiumNum";
-            this.label_Main_Interface_Profile_PlatiumNum.Size = new System.Drawing.Size(180, 50);
-            this.label_Main_Interface_Profile_PlatiumNum.TabIndex = 18;
-            this.label_Main_Interface_Profile_PlatiumNum.Text = "11";
-            this.label_Main_Interface_Profile_PlatiumNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_Main_Interface_Profile_GoldNum
-            // 
-            this.label_Main_Interface_Profile_GoldNum.BackColor = System.Drawing.Color.Transparent;
-            this.label_Main_Interface_Profile_GoldNum.Font = new System.Drawing.Font("Emotion Engine", 24F, System.Drawing.FontStyle.Bold);
-            this.label_Main_Interface_Profile_GoldNum.ForeColor = System.Drawing.SystemColors.Info;
-            this.label_Main_Interface_Profile_GoldNum.Location = new System.Drawing.Point(1076, 388);
-            this.label_Main_Interface_Profile_GoldNum.Name = "label_Main_Interface_Profile_GoldNum";
-            this.label_Main_Interface_Profile_GoldNum.Size = new System.Drawing.Size(180, 50);
-            this.label_Main_Interface_Profile_GoldNum.TabIndex = 20;
-            this.label_Main_Interface_Profile_GoldNum.Text = "303";
-            this.label_Main_Interface_Profile_GoldNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_Main_Interface_Profile_Gold
-            // 
-            this.label_Main_Interface_Profile_Gold.BackColor = System.Drawing.Color.Transparent;
-            this.label_Main_Interface_Profile_Gold.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
-            this.label_Main_Interface_Profile_Gold.ForeColor = System.Drawing.SystemColors.Info;
-            this.label_Main_Interface_Profile_Gold.Location = new System.Drawing.Point(1076, 358);
-            this.label_Main_Interface_Profile_Gold.Name = "label_Main_Interface_Profile_Gold";
-            this.label_Main_Interface_Profile_Gold.Size = new System.Drawing.Size(180, 30);
-            this.label_Main_Interface_Profile_Gold.TabIndex = 19;
-            this.label_Main_Interface_Profile_Gold.Text = "Gold";
-            this.label_Main_Interface_Profile_Gold.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_Main_Interface_Profile_SilverNum
-            // 
-            this.label_Main_Interface_Profile_SilverNum.BackColor = System.Drawing.Color.Transparent;
-            this.label_Main_Interface_Profile_SilverNum.Font = new System.Drawing.Font("Emotion Engine", 24F, System.Drawing.FontStyle.Bold);
-            this.label_Main_Interface_Profile_SilverNum.ForeColor = System.Drawing.SystemColors.Info;
-            this.label_Main_Interface_Profile_SilverNum.Location = new System.Drawing.Point(820, 477);
-            this.label_Main_Interface_Profile_SilverNum.Name = "label_Main_Interface_Profile_SilverNum";
-            this.label_Main_Interface_Profile_SilverNum.Size = new System.Drawing.Size(180, 50);
-            this.label_Main_Interface_Profile_SilverNum.TabIndex = 22;
-            this.label_Main_Interface_Profile_SilverNum.Text = "83";
-            this.label_Main_Interface_Profile_SilverNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_Main_Interface_Profile_Silver
-            // 
-            this.label_Main_Interface_Profile_Silver.BackColor = System.Drawing.Color.Transparent;
-            this.label_Main_Interface_Profile_Silver.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
-            this.label_Main_Interface_Profile_Silver.ForeColor = System.Drawing.SystemColors.Info;
-            this.label_Main_Interface_Profile_Silver.Location = new System.Drawing.Point(820, 447);
-            this.label_Main_Interface_Profile_Silver.Name = "label_Main_Interface_Profile_Silver";
-            this.label_Main_Interface_Profile_Silver.Size = new System.Drawing.Size(180, 30);
-            this.label_Main_Interface_Profile_Silver.TabIndex = 21;
-            this.label_Main_Interface_Profile_Silver.Text = "Silver";
-            this.label_Main_Interface_Profile_Silver.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_Main_Interface_Profile_BronzeNum
-            // 
-            this.label_Main_Interface_Profile_BronzeNum.BackColor = System.Drawing.Color.Transparent;
-            this.label_Main_Interface_Profile_BronzeNum.Font = new System.Drawing.Font("Emotion Engine", 24F, System.Drawing.FontStyle.Bold);
-            this.label_Main_Interface_Profile_BronzeNum.ForeColor = System.Drawing.SystemColors.Info;
-            this.label_Main_Interface_Profile_BronzeNum.Location = new System.Drawing.Point(1076, 477);
-            this.label_Main_Interface_Profile_BronzeNum.Name = "label_Main_Interface_Profile_BronzeNum";
-            this.label_Main_Interface_Profile_BronzeNum.Size = new System.Drawing.Size(180, 50);
-            this.label_Main_Interface_Profile_BronzeNum.TabIndex = 24;
-            this.label_Main_Interface_Profile_BronzeNum.Text = "1567";
-            this.label_Main_Interface_Profile_BronzeNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_Main_Interface_Profile_Bronze
-            // 
-            this.label_Main_Interface_Profile_Bronze.BackColor = System.Drawing.Color.Transparent;
-            this.label_Main_Interface_Profile_Bronze.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
-            this.label_Main_Interface_Profile_Bronze.ForeColor = System.Drawing.SystemColors.Info;
-            this.label_Main_Interface_Profile_Bronze.Location = new System.Drawing.Point(1076, 447);
-            this.label_Main_Interface_Profile_Bronze.Name = "label_Main_Interface_Profile_Bronze";
-            this.label_Main_Interface_Profile_Bronze.Size = new System.Drawing.Size(180, 30);
-            this.label_Main_Interface_Profile_Bronze.TabIndex = 23;
-            this.label_Main_Interface_Profile_Bronze.Text = "Bronze";
-            this.label_Main_Interface_Profile_Bronze.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Main_Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -533,15 +545,17 @@
             this.panel_Main_Interface_Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Close)).EndInit();
             this.panel_Main_Interface_Info.ResumeLayout(false);
-            this.panel_Main_Interface_Info.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_bkimage)).EndInit();
+            this.pictureBox_Main_Interface_bkimage.ResumeLayout(false);
+            this.pictureBox_Main_Interface_bkimage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Bronze)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Silver)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Gold)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Platium)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Plus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pictureBox_Main_Interface_Avatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Star)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Trophies)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Platium)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Gold)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Silver)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Bronze)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -580,6 +594,7 @@
         private System.Windows.Forms.Label label_Main_Interface_Profile_GoldNum;
         private System.Windows.Forms.Label label_Main_Interface_Profile_Gold;
         private System.Windows.Forms.Label label_Main_Interface_Profile_PlatiumNum;
+        private System.Windows.Forms.PictureBox pictureBox_Main_Interface_bkimage;
 
         /////////////////////////////////////////////////////////////
 

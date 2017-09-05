@@ -38,8 +38,6 @@
             this.label_PlayStation_Desktop_1 = new System.Windows.Forms.Label();
             this.label_PlayStation_Desktop_2 = new System.Windows.Forms.Label();
             this.label_Description = new System.Windows.Forms.Label();
-            this.pictureBox_develpoer_avatar = new System.Windows.Forms.PictureBox();
-            this.label_UserID = new System.Windows.Forms.Label();
             this.label_Welcom = new System.Windows.Forms.Label();
             this.label_username = new System.Windows.Forms.Label();
             this.label_password = new System.Windows.Forms.Label();
@@ -51,12 +49,12 @@
             this.materialDivider_Login_Form_1 = new MaterialSkin.Controls.MaterialDivider();
             this.materialCheckBox_Login_Remember = new MaterialSkin.Controls.MaterialCheckBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button_Login_Form_PsStore = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Login_Form_About)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playstation_logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_develpoer_avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,6 +148,7 @@
             this.label_PlayStation_Desktop_1.Text = "PlayStation";
             this.label_PlayStation_Desktop_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_PlayStation_Desktop_1.Click += new System.EventHandler(this.label_PlayStation_Desktop_1_Click);
+            this.label_PlayStation_Desktop_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_PlayStation_Desktop_2
             // 
@@ -162,6 +161,7 @@
             this.label_PlayStation_Desktop_2.TabIndex = 3;
             this.label_PlayStation_Desktop_2.Text = "Desktop";
             this.label_PlayStation_Desktop_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_PlayStation_Desktop_2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Description
             // 
@@ -173,39 +173,19 @@
             this.label_Description.TabIndex = 4;
             this.label_Description.Text = "View Your PSN Profile Freely";
             this.label_Description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox_develpoer_avatar
-            // 
-            this.pictureBox_develpoer_avatar.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_develpoer_avatar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_develpoer_avatar.Image")));
-            this.pictureBox_develpoer_avatar.Location = new System.Drawing.Point(0, 330);
-            this.pictureBox_develpoer_avatar.Name = "pictureBox_develpoer_avatar";
-            this.pictureBox_develpoer_avatar.Size = new System.Drawing.Size(400, 160);
-            this.pictureBox_develpoer_avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_develpoer_avatar.TabIndex = 5;
-            this.pictureBox_develpoer_avatar.TabStop = false;
-            // 
-            // label_UserID
-            // 
-            this.label_UserID.BackColor = System.Drawing.Color.Transparent;
-            this.label_UserID.Font = new System.Drawing.Font("Emotion Engine", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_UserID.Location = new System.Drawing.Point(0, 280);
-            this.label_UserID.Name = "label_UserID";
-            this.label_UserID.Size = new System.Drawing.Size(400, 40);
-            this.label_UserID.TabIndex = 6;
-            this.label_UserID.Text = "A-mazin-G";
-            this.label_UserID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Description.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Welcom
             // 
             this.label_Welcom.BackColor = System.Drawing.Color.Transparent;
-            this.label_Welcom.Font = new System.Drawing.Font("Emotion Engine", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Welcom.Location = new System.Drawing.Point(0, 220);
+            this.label_Welcom.Font = new System.Drawing.Font("NEOTERIC", 40F, System.Drawing.FontStyle.Bold);
+            this.label_Welcom.Location = new System.Drawing.Point(0, 240);
             this.label_Welcom.Name = "label_Welcom";
-            this.label_Welcom.Size = new System.Drawing.Size(400, 50);
+            this.label_Welcom.Size = new System.Drawing.Size(400, 65);
             this.label_Welcom.TabIndex = 7;
-            this.label_Welcom.Text = "Welcome";
+            this.label_Welcom.Text = "WELCOME";
             this.label_Welcom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Welcom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_username
             // 
@@ -315,12 +295,25 @@
             this.materialCheckBox_Login_Remember.Text = "Remember Me";
             this.materialCheckBox_Login_Remember.UseVisualStyleBackColor = false;
             // 
+            // button_Login_Form_PsStore
+            // 
+            this.button_Login_Form_PsStore.FlatAppearance.BorderSize = 0;
+            this.button_Login_Form_PsStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Login_Form_PsStore.Image = ((System.Drawing.Image)(resources.GetObject("button_Login_Form_PsStore.Image")));
+            this.button_Login_Form_PsStore.Location = new System.Drawing.Point(120, 340);
+            this.button_Login_Form_PsStore.Name = "button_Login_Form_PsStore";
+            this.button_Login_Form_PsStore.Size = new System.Drawing.Size(160, 160);
+            this.button_Login_Form_PsStore.TabIndex = 17;
+            this.button_Login_Form_PsStore.UseVisualStyleBackColor = true;
+            this.button_Login_Form_PsStore.Click += new System.EventHandler(this.button_Login_Form_PsStore_Click);
+            // 
             // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.button_Login_Form_PsStore);
             this.Controls.Add(this.materialCheckBox_Login_Remember);
             this.Controls.Add(this.materialDivider_Login_Form_1);
             this.Controls.Add(this.label1);
@@ -331,8 +324,6 @@
             this.Controls.Add(this.label_password);
             this.Controls.Add(this.label_username);
             this.Controls.Add(this.label_Welcom);
-            this.Controls.Add(this.label_UserID);
-            this.Controls.Add(this.pictureBox_develpoer_avatar);
             this.Controls.Add(this.label_Description);
             this.Controls.Add(this.label_PlayStation_Desktop_2);
             this.Controls.Add(this.label_PlayStation_Desktop_1);
@@ -351,7 +342,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playstation_logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_develpoer_avatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,8 +357,6 @@
         private System.Windows.Forms.Label label_PlayStation_Desktop_1;
         private System.Windows.Forms.Label label_PlayStation_Desktop_2;
         private System.Windows.Forms.Label label_Description;
-        private System.Windows.Forms.PictureBox pictureBox_develpoer_avatar;
-        private System.Windows.Forms.Label label_UserID;
         private System.Windows.Forms.Label label_Welcom;
         private System.Windows.Forms.Label label_username;
         private System.Windows.Forms.Label label_password;
@@ -381,6 +369,7 @@
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox_Login_Remember;
         private System.Windows.Forms.PictureBox pictureBox_Login_Form_About;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button button_Login_Form_PsStore;
     }
 }
 

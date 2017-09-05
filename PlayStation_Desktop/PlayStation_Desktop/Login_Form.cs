@@ -69,5 +69,15 @@ namespace PlayStation_Desktop
             Main_Interface main_interface = new Main_Interface();
             main_interface.ShowDialog();
         }
+
+        private void pictureBox_PsStore_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://store.playstation.com");
+        }
+
+        private void button_Login_Form_PsStore_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://store.playstation.com");
+        }
     }
 }
