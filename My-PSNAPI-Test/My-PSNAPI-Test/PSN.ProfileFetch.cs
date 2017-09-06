@@ -10,7 +10,9 @@ using CsvHelper;
 
 namespace My_PSNAPI_Test
 {
-
+    /// <summary>
+    /// create profile_fetch object.
+    /// </summary>
     public class profile_fetch
     {
         public List<string> friend_ids { get; set; }
@@ -23,6 +25,10 @@ namespace My_PSNAPI_Test
             account_friends = useraccount.GetFriends("all", useraccount.Profile.friendsCount);
         }
 
+        /// <summary>
+        /// fetch psn profile.
+        /// </summary>
+        /// <param name="avatar_fetch">avatar_fetch = true: update the avatars file</param>
         public void friends_data_fetch(Boolean avatar_fetch=false)
         {
             foreach (User item in account_friends)
@@ -36,6 +42,7 @@ namespace My_PSNAPI_Test
                 ///////////////////////////////////////////////////////////////////////
                 //拉取用户信息
                 //若返回值为null载使用toString()方法会报错未将对象引用设置到对象的实例
+                #region add profile data to list
                 try
                 {
                     friend_data.Add(friend.Profile.languagesUsed[0]);
@@ -118,12 +125,12 @@ namespace My_PSNAPI_Test
                 }
 
                 friend_data.Add(friend.Profile.avatarUrls[0].avatarUrl);
-
+                #endregion 
                 Console.WriteLine(friend.Profile.onlineId+ "  data fetched");
                 this.friends_data.Add(friend_data);
 
                 ///////////////////////////////////////////////////////////////////////
-                //更新头像数据
+                
                 if (avatar_fetch)
                 {
                     if (!Directory.Exists(Directory.GetCurrentDirectory() + "/avatars/"))

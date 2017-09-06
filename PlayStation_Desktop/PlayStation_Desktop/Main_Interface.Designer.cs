@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Interface));
             this.panel_Main_Interface_Menu = new System.Windows.Forms.Panel();
-            this.pictureBox_Main_Interface_Close = new System.Windows.Forms.PictureBox();
+            this.button_Main_Interface_Close = new System.Windows.Forms.Button();
+            this.button_Main_Interface_Hide = new System.Windows.Forms.Button();
             this.button_Main_Interface_Setting = new System.Windows.Forms.Button();
             this.button_Main_Interface_Friend = new System.Windows.Forms.Button();
             this.button_Main_Interface_Trophy = new System.Windows.Forms.Button();
             this.button_Main_Interface_Profile = new System.Windows.Forms.Button();
-            this.panel_Main_Interface_Info = new System.Windows.Forms.Panel();
+            this.panel_Main_Interface_Profile = new System.Windows.Forms.Panel();
             this.pictureBox_Main_Interface_bkimage = new System.Windows.Forms.PictureBox();
             this.label_Main_Interface_Profile_BronzeNum = new System.Windows.Forms.Label();
             this.label_Main_Interface_Profile_Bronze = new System.Windows.Forms.Label();
@@ -63,8 +64,7 @@
             this.pictureBox_Main_Interface_Star = new System.Windows.Forms.PictureBox();
             this.pictureBox_Main_Interface_Trophies = new System.Windows.Forms.PictureBox();
             this.panel_Main_Interface_Menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Close)).BeginInit();
-            this.panel_Main_Interface_Info.SuspendLayout();
+            this.panel_Main_Interface_Profile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_bkimage)).BeginInit();
             this.pictureBox_Main_Interface_bkimage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Bronze)).BeginInit();
@@ -79,8 +79,12 @@
             // 
             // panel_Main_Interface_Menu
             // 
+            this.panel_Main_Interface_Menu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_Main_Interface_Menu.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel_Main_Interface_Menu.Controls.Add(this.pictureBox_Main_Interface_Close);
+            this.panel_Main_Interface_Menu.Controls.Add(this.button_Main_Interface_Close);
+            this.panel_Main_Interface_Menu.Controls.Add(this.button_Main_Interface_Hide);
             this.panel_Main_Interface_Menu.Controls.Add(this.button_Main_Interface_Setting);
             this.panel_Main_Interface_Menu.Controls.Add(this.button_Main_Interface_Friend);
             this.panel_Main_Interface_Menu.Controls.Add(this.button_Main_Interface_Trophy);
@@ -91,19 +95,37 @@
             this.panel_Main_Interface_Menu.TabIndex = 0;
             this.panel_Main_Interface_Menu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
-            // pictureBox_Main_Interface_Close
+            // button_Main_Interface_Close
             // 
-            this.pictureBox_Main_Interface_Close.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Close.Image")));
-            this.pictureBox_Main_Interface_Close.Location = new System.Drawing.Point(1230, 0);
-            this.pictureBox_Main_Interface_Close.Name = "pictureBox_Main_Interface_Close";
-            this.pictureBox_Main_Interface_Close.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox_Main_Interface_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox_Main_Interface_Close.TabIndex = 8;
-            this.pictureBox_Main_Interface_Close.TabStop = false;
-            this.pictureBox_Main_Interface_Close.Click += new System.EventHandler(this.pictureBox_Main_Interface_Close_Click);
+            this.button_Main_Interface_Close.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_Main_Interface_Close.FlatAppearance.BorderSize = 0;
+            this.button_Main_Interface_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Main_Interface_Close.Image = ((System.Drawing.Image)(resources.GetObject("button_Main_Interface_Close.Image")));
+            this.button_Main_Interface_Close.Location = new System.Drawing.Point(1230, 0);
+            this.button_Main_Interface_Close.Name = "button_Main_Interface_Close";
+            this.button_Main_Interface_Close.Size = new System.Drawing.Size(50, 50);
+            this.button_Main_Interface_Close.TabIndex = 10;
+            this.button_Main_Interface_Close.UseVisualStyleBackColor = false;
+            this.button_Main_Interface_Close.Click += new System.EventHandler(this.button_Main_Interface_Close_Click);
+            // 
+            // button_Main_Interface_Hide
+            // 
+            this.button_Main_Interface_Hide.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_Main_Interface_Hide.FlatAppearance.BorderSize = 0;
+            this.button_Main_Interface_Hide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Main_Interface_Hide.Image = ((System.Drawing.Image)(resources.GetObject("button_Main_Interface_Hide.Image")));
+            this.button_Main_Interface_Hide.Location = new System.Drawing.Point(1170, 0);
+            this.button_Main_Interface_Hide.Name = "button_Main_Interface_Hide";
+            this.button_Main_Interface_Hide.Size = new System.Drawing.Size(50, 50);
+            this.button_Main_Interface_Hide.TabIndex = 9;
+            this.button_Main_Interface_Hide.UseVisualStyleBackColor = false;
+            this.button_Main_Interface_Hide.Click += new System.EventHandler(this.button_Main_Interface_Hide_Click);
             // 
             // button_Main_Interface_Setting
             // 
+            this.button_Main_Interface_Setting.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Main_Interface_Setting.BackColor = System.Drawing.Color.Transparent;
             this.button_Main_Interface_Setting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_Main_Interface_Setting.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -125,6 +147,9 @@
             // 
             // button_Main_Interface_Friend
             // 
+            this.button_Main_Interface_Friend.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Main_Interface_Friend.BackColor = System.Drawing.Color.Transparent;
             this.button_Main_Interface_Friend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_Main_Interface_Friend.FlatAppearance.BorderSize = 0;
@@ -145,6 +170,9 @@
             // 
             // button_Main_Interface_Trophy
             // 
+            this.button_Main_Interface_Trophy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Main_Interface_Trophy.BackColor = System.Drawing.Color.Transparent;
             this.button_Main_Interface_Trophy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_Main_Interface_Trophy.FlatAppearance.BorderSize = 0;
@@ -162,9 +190,13 @@
             this.button_Main_Interface_Trophy.Text = "My Trophy";
             this.button_Main_Interface_Trophy.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_Main_Interface_Trophy.UseVisualStyleBackColor = false;
+            this.button_Main_Interface_Trophy.Click += new System.EventHandler(this.button_Main_Interface_Trophy_Click);
             // 
             // button_Main_Interface_Profile
             // 
+            this.button_Main_Interface_Profile.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Main_Interface_Profile.BackColor = System.Drawing.Color.Transparent;
             this.button_Main_Interface_Profile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_Main_Interface_Profile.FlatAppearance.BorderSize = 0;
@@ -184,14 +216,14 @@
             this.button_Main_Interface_Profile.UseVisualStyleBackColor = false;
             this.button_Main_Interface_Profile.Click += new System.EventHandler(this.button_Main_Interface_Profile_Click);
             // 
-            // panel_Main_Interface_Info
+            // panel_Main_Interface_Profile
             // 
-            this.panel_Main_Interface_Info.Controls.Add(this.pictureBox_Main_Interface_bkimage);
-            this.panel_Main_Interface_Info.Location = new System.Drawing.Point(0, 150);
-            this.panel_Main_Interface_Info.Name = "panel_Main_Interface_Info";
-            this.panel_Main_Interface_Info.Size = new System.Drawing.Size(1280, 570);
-            this.panel_Main_Interface_Info.TabIndex = 1;
-            this.panel_Main_Interface_Info.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
+            this.panel_Main_Interface_Profile.Controls.Add(this.pictureBox_Main_Interface_bkimage);
+            this.panel_Main_Interface_Profile.Location = new System.Drawing.Point(0, 150);
+            this.panel_Main_Interface_Profile.Name = "panel_Main_Interface_Profile";
+            this.panel_Main_Interface_Profile.Size = new System.Drawing.Size(1280, 570);
+            this.panel_Main_Interface_Profile.TabIndex = 1;
+            this.panel_Main_Interface_Profile.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // pictureBox_Main_Interface_bkimage
             // 
@@ -230,6 +262,9 @@
             // 
             // label_Main_Interface_Profile_BronzeNum
             // 
+            this.label_Main_Interface_Profile_BronzeNum.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_BronzeNum.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_BronzeNum.Font = new System.Drawing.Font("Emotion Engine", 28F);
             this.label_Main_Interface_Profile_BronzeNum.ForeColor = System.Drawing.SystemColors.Info;
@@ -242,6 +277,9 @@
             // 
             // label_Main_Interface_Profile_Bronze
             // 
+            this.label_Main_Interface_Profile_Bronze.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_Bronze.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_Bronze.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
             this.label_Main_Interface_Profile_Bronze.ForeColor = System.Drawing.SystemColors.Info;
@@ -254,6 +292,9 @@
             // 
             // label_Main_Interface_Profile_SilverNum
             // 
+            this.label_Main_Interface_Profile_SilverNum.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_SilverNum.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_SilverNum.Font = new System.Drawing.Font("Emotion Engine", 28F);
             this.label_Main_Interface_Profile_SilverNum.ForeColor = System.Drawing.SystemColors.Info;
@@ -266,6 +307,9 @@
             // 
             // label_Main_Interface_Profile_Silver
             // 
+            this.label_Main_Interface_Profile_Silver.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_Silver.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_Silver.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
             this.label_Main_Interface_Profile_Silver.ForeColor = System.Drawing.SystemColors.Info;
@@ -278,6 +322,9 @@
             // 
             // label_Main_Interface_Profile_GoldNum
             // 
+            this.label_Main_Interface_Profile_GoldNum.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_GoldNum.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_GoldNum.Font = new System.Drawing.Font("Emotion Engine", 28F);
             this.label_Main_Interface_Profile_GoldNum.ForeColor = System.Drawing.SystemColors.Info;
@@ -290,6 +337,9 @@
             // 
             // label_Main_Interface_Profile_Gold
             // 
+            this.label_Main_Interface_Profile_Gold.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_Gold.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_Gold.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
             this.label_Main_Interface_Profile_Gold.ForeColor = System.Drawing.SystemColors.Info;
@@ -302,6 +352,9 @@
             // 
             // label_Main_Interface_Profile_PlatiumNum
             // 
+            this.label_Main_Interface_Profile_PlatiumNum.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_PlatiumNum.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_PlatiumNum.Font = new System.Drawing.Font("Emotion Engine", 28F);
             this.label_Main_Interface_Profile_PlatiumNum.ForeColor = System.Drawing.SystemColors.Info;
@@ -314,6 +367,9 @@
             // 
             // label_Main_Interface_Profile_Platium
             // 
+            this.label_Main_Interface_Profile_Platium.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_Platium.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_Platium.Font = new System.Drawing.Font("NEOTERIC", 20F, System.Drawing.FontStyle.Bold);
             this.label_Main_Interface_Profile_Platium.ForeColor = System.Drawing.SystemColors.Info;
@@ -327,6 +383,9 @@
             // 
             // pictureBox_Main_Interface_Bronze
             // 
+            this.pictureBox_Main_Interface_Bronze.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox_Main_Interface_Bronze.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Main_Interface_Bronze.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Bronze.Image")));
             this.pictureBox_Main_Interface_Bronze.Location = new System.Drawing.Point(1000, 447);
@@ -338,6 +397,9 @@
             // 
             // pictureBox_Main_Interface_Silver
             // 
+            this.pictureBox_Main_Interface_Silver.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox_Main_Interface_Silver.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Main_Interface_Silver.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Silver.Image")));
             this.pictureBox_Main_Interface_Silver.Location = new System.Drawing.Point(740, 447);
@@ -349,6 +411,9 @@
             // 
             // pictureBox_Main_Interface_Gold
             // 
+            this.pictureBox_Main_Interface_Gold.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox_Main_Interface_Gold.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Main_Interface_Gold.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Gold.Image")));
             this.pictureBox_Main_Interface_Gold.Location = new System.Drawing.Point(1000, 358);
@@ -360,6 +425,9 @@
             // 
             // pictureBox_Main_Interface_Platium
             // 
+            this.pictureBox_Main_Interface_Platium.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox_Main_Interface_Platium.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Main_Interface_Platium.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Platium.Image")));
             this.pictureBox_Main_Interface_Platium.Location = new System.Drawing.Point(740, 358);
@@ -371,6 +439,9 @@
             // 
             // label_Main_Interface_Profile_aboutme_content
             // 
+            this.label_Main_Interface_Profile_aboutme_content.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_aboutme_content.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_aboutme_content.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Main_Interface_Profile_aboutme_content.ForeColor = System.Drawing.SystemColors.Info;
@@ -418,6 +489,7 @@
             this.label_Main_Interface_Profile_userid.Size = new System.Drawing.Size(400, 50);
             this.label_Main_Interface_Profile_userid.TabIndex = 9;
             this.label_Main_Interface_Profile_userid.Text = "A-mazin-G";
+            this.label_Main_Interface_Profile_userid.Visible = false;
             this.label_Main_Interface_Profile_userid.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // pictureBox_pictureBox_Main_Interface_Avatar
@@ -433,6 +505,9 @@
             // 
             // labellabel_Main_Interface_tonextlevel_num
             // 
+            this.labellabel_Main_Interface_tonextlevel_num.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labellabel_Main_Interface_tonextlevel_num.BackColor = System.Drawing.Color.Transparent;
             this.labellabel_Main_Interface_tonextlevel_num.Font = new System.Drawing.Font("Emotion Engine", 18F, System.Drawing.FontStyle.Bold);
             this.labellabel_Main_Interface_tonextlevel_num.ForeColor = System.Drawing.SystemColors.Info;
@@ -445,6 +520,9 @@
             // 
             // materialDivider2
             // 
+            this.materialDivider2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(211)))), ((int)(((byte)(54)))));
             this.materialDivider2.Depth = 0;
             this.materialDivider2.Location = new System.Drawing.Point(740, 324);
@@ -457,6 +535,9 @@
             // 
             // label_Main_Interface_tonextlevel
             // 
+            this.label_Main_Interface_tonextlevel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_tonextlevel.AutoSize = true;
             this.label_Main_Interface_tonextlevel.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_tonextlevel.Font = new System.Drawing.Font("NEOTERIC", 16F, System.Drawing.FontStyle.Bold);
@@ -470,6 +551,9 @@
             // 
             // materialDivider1
             // 
+            this.materialDivider1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialDivider1.BackColor = System.Drawing.Color.White;
             this.materialDivider1.Depth = 0;
             this.materialDivider1.Location = new System.Drawing.Point(740, 324);
@@ -482,6 +566,9 @@
             // 
             // label_Main_Interface_Profile_levelnum
             // 
+            this.label_Main_Interface_Profile_levelnum.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_levelnum.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_levelnum.Font = new System.Drawing.Font("Emotion Engine", 40F);
             this.label_Main_Interface_Profile_levelnum.ForeColor = System.Drawing.SystemColors.Info;
@@ -495,6 +582,9 @@
             // 
             // label_Main_Interface_Profile_level
             // 
+            this.label_Main_Interface_Profile_level.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Main_Interface_Profile_level.BackColor = System.Drawing.Color.Transparent;
             this.label_Main_Interface_Profile_level.Font = new System.Drawing.Font("Emotion Engine", 16F);
             this.label_Main_Interface_Profile_level.ForeColor = System.Drawing.SystemColors.Info;
@@ -508,6 +598,9 @@
             // 
             // pictureBox_Main_Interface_Star
             // 
+            this.pictureBox_Main_Interface_Star.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox_Main_Interface_Star.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Main_Interface_Star.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Star.Image")));
             this.pictureBox_Main_Interface_Star.Location = new System.Drawing.Point(740, 225);
@@ -520,6 +613,9 @@
             // 
             // pictureBox_Main_Interface_Trophies
             // 
+            this.pictureBox_Main_Interface_Trophies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox_Main_Interface_Trophies.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Main_Interface_Trophies.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Main_Interface_Trophies.Image")));
             this.pictureBox_Main_Interface_Trophies.Location = new System.Drawing.Point(740, 21);
@@ -535,16 +631,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.panel_Main_Interface_Info);
+            this.Controls.Add(this.panel_Main_Interface_Profile);
             this.Controls.Add(this.panel_Main_Interface_Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main_Interface";
             this.Text = "Main_Interface";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.panel_Main_Interface_Menu.ResumeLayout(false);
-            this.panel_Main_Interface_Menu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_Close)).EndInit();
-            this.panel_Main_Interface_Info.ResumeLayout(false);
+            this.panel_Main_Interface_Profile.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main_Interface_bkimage)).EndInit();
             this.pictureBox_Main_Interface_bkimage.ResumeLayout(false);
             this.pictureBox_Main_Interface_bkimage.PerformLayout();
@@ -567,8 +661,7 @@
         private System.Windows.Forms.Button button_Main_Interface_Trophy;
         private System.Windows.Forms.Button button_Main_Interface_Friend;
         private System.Windows.Forms.Button button_Main_Interface_Setting;
-        private System.Windows.Forms.PictureBox pictureBox_Main_Interface_Close;
-        private System.Windows.Forms.Panel panel_Main_Interface_Info;
+        private System.Windows.Forms.Panel panel_Main_Interface_Profile;
         private System.Windows.Forms.PictureBox pictureBox_Main_Interface_Trophies;
         private System.Windows.Forms.Label label_Main_Interface_Profile_level;
         private System.Windows.Forms.PictureBox pictureBox_Main_Interface_Star;
@@ -595,6 +688,8 @@
         private System.Windows.Forms.Label label_Main_Interface_Profile_Gold;
         private System.Windows.Forms.Label label_Main_Interface_Profile_PlatiumNum;
         private System.Windows.Forms.PictureBox pictureBox_Main_Interface_bkimage;
+        private System.Windows.Forms.Button button_Main_Interface_Hide;
+        private System.Windows.Forms.Button button_Main_Interface_Close;
 
         /////////////////////////////////////////////////////////////
 

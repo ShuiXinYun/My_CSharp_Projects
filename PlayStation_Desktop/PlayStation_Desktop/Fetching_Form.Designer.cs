@@ -38,6 +38,7 @@
             this.materialDivider_Fetch_Form_Bottom = new MaterialSkin.Controls.MaterialDivider();
             this.materialDivider_Fetch_Form_Left = new MaterialSkin.Controls.MaterialDivider();
             this.materialDivider_Fetch_Form_Right = new MaterialSkin.Controls.MaterialDivider();
+            this.label_Fetch_Form_Status = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,12 +126,23 @@
             this.materialDivider_Fetch_Form_Right.TabIndex = 6;
             this.materialDivider_Fetch_Form_Right.Text = "materialDivider3";
             // 
+            // label_Fetch_Form_Status
+            // 
+            this.label_Fetch_Form_Status.Font = new System.Drawing.Font("NEOTERIC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Fetch_Form_Status.Location = new System.Drawing.Point(115, 180);
+            this.label_Fetch_Form_Status.Name = "label_Fetch_Form_Status";
+            this.label_Fetch_Form_Status.Size = new System.Drawing.Size(250, 34);
+            this.label_Fetch_Form_Status.TabIndex = 7;
+            this.label_Fetch_Form_Status.Text = "Tokens - Fetched";
+            this.label_Fetch_Form_Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Fetching_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(480, 320);
+            this.Controls.Add(this.label_Fetch_Form_Status);
             this.Controls.Add(this.materialDivider_Fetch_Form_Right);
             this.Controls.Add(this.materialDivider_Fetch_Form_Left);
             this.Controls.Add(this.materialDivider_Fetch_Form_Bottom);
@@ -157,5 +169,6 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider_Fetch_Form_Bottom;
         private MaterialSkin.Controls.MaterialDivider materialDivider_Fetch_Form_Left;
         private MaterialSkin.Controls.MaterialDivider materialDivider_Fetch_Form_Right;
+        private System.Windows.Forms.Label label_Fetch_Form_Status;
     }
 }

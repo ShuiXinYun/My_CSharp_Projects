@@ -13,8 +13,10 @@ namespace PlayStation_Desktop
 {
     public partial class Main_Interface : Form
     {
-        public Main_Interface()
+        private Login_Form login_form_in_main_interface;
+        public Main_Interface(Login_Form login_Form)
         {
+            login_form_in_main_interface = login_Form;
             InitializeComponent();
         }
 
@@ -30,11 +32,6 @@ namespace PlayStation_Desktop
             SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
         }
 
-        private void button_Main_Interface_Profile_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox_Main_Interface_Close_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -48,6 +45,28 @@ namespace PlayStation_Desktop
         private void label_Main_Interface_Profile_Platium_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_Main_Interface_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            login_form_in_main_interface.Close();
+        }
+
+        private void button_Main_Interface_Hide_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+
+        private void button_Main_Interface_Profile_Click(object sender, EventArgs e)
+        {
+            this.panel_Main_Interface_Profile.Visible = true;
+        }
+
+        private void button_Main_Interface_Trophy_Click(object sender, EventArgs e)
+        {
+            this.panel_Main_Interface_Profile.Visible = false;
         }
     }
 }

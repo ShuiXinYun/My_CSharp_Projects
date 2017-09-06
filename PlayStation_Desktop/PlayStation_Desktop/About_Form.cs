@@ -53,5 +53,10 @@ namespace PlayStation_Desktop
             this.linkLabel_About_Form_Aboutme.LinkVisited = true;
             System.Diagnostics.Process.Start("http://yunshuixin.cn/about-me/");
         }
+
+        private void button_About_Form_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
