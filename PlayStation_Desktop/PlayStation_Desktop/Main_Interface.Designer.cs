@@ -274,6 +274,7 @@
             this.label_Main_Interface_Profile_BronzeNum.TabIndex = 24;
             this.label_Main_Interface_Profile_BronzeNum.Text = "1567";
             this.label_Main_Interface_Profile_BronzeNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Main_Interface_Profile_BronzeNum.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Main_Interface_Profile_Bronze
             // 
@@ -289,6 +290,7 @@
             this.label_Main_Interface_Profile_Bronze.TabIndex = 23;
             this.label_Main_Interface_Profile_Bronze.Text = "Bronze";
             this.label_Main_Interface_Profile_Bronze.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Main_Interface_Profile_Bronze.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Main_Interface_Profile_SilverNum
             // 
@@ -304,6 +306,7 @@
             this.label_Main_Interface_Profile_SilverNum.TabIndex = 22;
             this.label_Main_Interface_Profile_SilverNum.Text = "83";
             this.label_Main_Interface_Profile_SilverNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Main_Interface_Profile_SilverNum.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Main_Interface_Profile_Silver
             // 
@@ -319,6 +322,7 @@
             this.label_Main_Interface_Profile_Silver.TabIndex = 21;
             this.label_Main_Interface_Profile_Silver.Text = "Silver";
             this.label_Main_Interface_Profile_Silver.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Main_Interface_Profile_Silver.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Main_Interface_Profile_GoldNum
             // 
@@ -334,6 +338,7 @@
             this.label_Main_Interface_Profile_GoldNum.TabIndex = 20;
             this.label_Main_Interface_Profile_GoldNum.Text = "303";
             this.label_Main_Interface_Profile_GoldNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Main_Interface_Profile_GoldNum.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Main_Interface_Profile_Gold
             // 
@@ -349,6 +354,7 @@
             this.label_Main_Interface_Profile_Gold.TabIndex = 19;
             this.label_Main_Interface_Profile_Gold.Text = "Gold";
             this.label_Main_Interface_Profile_Gold.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Main_Interface_Profile_Gold.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Main_Interface_Profile_PlatiumNum
             // 
@@ -364,6 +370,7 @@
             this.label_Main_Interface_Profile_PlatiumNum.TabIndex = 18;
             this.label_Main_Interface_Profile_PlatiumNum.Text = "11";
             this.label_Main_Interface_Profile_PlatiumNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Main_Interface_Profile_PlatiumNum.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Main_Interface_Profile_Platium
             // 
@@ -380,6 +387,7 @@
             this.label_Main_Interface_Profile_Platium.Text = "Platium";
             this.label_Main_Interface_Profile_Platium.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Main_Interface_Profile_Platium.Click += new System.EventHandler(this.label_Main_Interface_Profile_Platium_Click);
+            this.label_Main_Interface_Profile_Platium.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // pictureBox_Main_Interface_Bronze
             // 
@@ -394,6 +402,7 @@
             this.pictureBox_Main_Interface_Bronze.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_Main_Interface_Bronze.TabIndex = 16;
             this.pictureBox_Main_Interface_Bronze.TabStop = false;
+            this.pictureBox_Main_Interface_Bronze.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // pictureBox_Main_Interface_Silver
             // 
@@ -408,6 +417,7 @@
             this.pictureBox_Main_Interface_Silver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_Main_Interface_Silver.TabIndex = 15;
             this.pictureBox_Main_Interface_Silver.TabStop = false;
+            this.pictureBox_Main_Interface_Silver.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // pictureBox_Main_Interface_Gold
             // 
@@ -422,6 +432,7 @@
             this.pictureBox_Main_Interface_Gold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_Main_Interface_Gold.TabIndex = 14;
             this.pictureBox_Main_Interface_Gold.TabStop = false;
+            this.pictureBox_Main_Interface_Gold.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // pictureBox_Main_Interface_Platium
             // 
@@ -436,6 +447,7 @@
             this.pictureBox_Main_Interface_Platium.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_Main_Interface_Platium.TabIndex = 13;
             this.pictureBox_Main_Interface_Platium.TabStop = false;
+            this.pictureBox_Main_Interface_Platium.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // label_Main_Interface_Profile_aboutme_content
             // 
@@ -634,6 +646,7 @@
             this.Controls.Add(this.panel_Main_Interface_Profile);
             this.Controls.Add(this.panel_Main_Interface_Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main_Interface";
             this.Text = "Main_Interface";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);

@@ -142,6 +142,7 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Author :  云水心";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // linkLabel_About_Form_Aboutme
             // 

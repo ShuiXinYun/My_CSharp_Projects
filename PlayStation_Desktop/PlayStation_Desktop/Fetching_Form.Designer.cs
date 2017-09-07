@@ -135,6 +135,7 @@
             this.label_Fetch_Form_Status.TabIndex = 7;
             this.label_Fetch_Form_Status.Text = "Tokens - Fetched";
             this.label_Fetch_Form_Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Fetch_Form_Status.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // Fetching_Form
             // 

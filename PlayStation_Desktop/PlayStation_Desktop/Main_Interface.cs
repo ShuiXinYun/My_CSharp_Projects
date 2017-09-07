@@ -20,6 +20,38 @@ namespace PlayStation_Desktop
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Animation Class
+        /// </summary>
+        public static class Util
+        {
+            public enum Effect { Roll, Slide, Center, Blend}
+
+            public static void Animate(Control ctl, Effect effect, int msec, int angle)
+            {
+                int flags = effmap[(int)effect];
+                if (ctl.Visible)
+                {
+                    flags |= 0x10000; angle += 180;
+                }
+                else
+                {
+                    if (ctl.TopLevelControl == ctl) flags |= 0x20000;
+                    else if (effect == Effect.Blend) throw new ArgumentException();
+                }
+
+                flags |= dirmap[(angle % 360) / 45];
+                bool ok = AnimateWindow(ctl.Handle, msec, flags);
+                if (!ok) throw new Exception("Animation Failids");
+                ctl.Visible = !ctl.Visible;
+            }
+
+            private static int[] dirmap = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            private static int[] effmap = { 0, 0x40000, 0x10, 0x80000 };
+            [DllImport("user32.dll")]
+            private static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
+        }
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
         [DllImportAttribute("user32.dll")]
@@ -61,12 +93,14 @@ namespace PlayStation_Desktop
 
         private void button_Main_Interface_Profile_Click(object sender, EventArgs e)
         {
-            this.panel_Main_Interface_Profile.Visible = true;
+            //this.panel_Main_Interface_Profile.Visible = true;
+            if (this.panel_Main_Interface_Profile.Visible == false)  Util.Animate(this.panel_Main_Interface_Profile, Util.Effect.Roll, 200,0);
         }
 
         private void button_Main_Interface_Trophy_Click(object sender, EventArgs e)
         {
             this.panel_Main_Interface_Profile.Visible = false;
+            
         }
     }
 }
