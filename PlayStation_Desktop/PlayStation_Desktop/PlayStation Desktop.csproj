@@ -35,6 +35,9 @@
     <ApplicationIcon>icons8_PlayStation.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ctlCuteButton">
+      <HintPath>..\..\ctlCuteButton\ctlCuteButton\bin\Debug\ctlCuteButton.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
