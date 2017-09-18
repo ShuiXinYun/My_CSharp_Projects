@@ -17,6 +17,7 @@ namespace PlayStation_Desktop
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login_Form());
+            //Application.Run(new Fetching_Form());
         }
     }
 }

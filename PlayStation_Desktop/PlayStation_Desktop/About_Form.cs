@@ -58,5 +58,15 @@ namespace PlayStation_Desktop
         {
             this.Close();
         }
+
+        private void pictureBox_Tustin_avatar_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Tustin");
+        }
+
+        private void pictureBox_yunshuixin_avatar_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/ShuiXinYun");
+        }
     }
 }

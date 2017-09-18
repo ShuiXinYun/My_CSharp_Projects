@@ -94,7 +94,7 @@ namespace PlayStation_Desktop
         private void button_Main_Interface_Profile_Click(object sender, EventArgs e)
         {
             //this.panel_Main_Interface_Profile.Visible = true;
-            if (this.panel_Main_Interface_Profile.Visible == false)  Util.Animate(this.panel_Main_Interface_Profile, Util.Effect.Roll, 200,0);
+            if (this.panel_Main_Interface_Profile.Visible == false)  Util.Animate(this.panel_Main_Interface_Profile, Util.Effect.Center, 200,0);
         }
 
         private void button_Main_Interface_Trophy_Click(object sender, EventArgs e)
